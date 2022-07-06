@@ -124,6 +124,9 @@ let animals = [camel, lion, deer, goose, bat, rabbit];
 let input = require('sync-input');
 let answer = input("Which habitat # do you need?");
 
+while(answer !== "exit") {
   console.log(animals[(answer)]);
-  console.log(`---
-You've reached the end of the program. To check another habitat, please restart the watcher.`);
+  answer = input("Which habitat # do you need?");
+}
+
+console.log("See you later!");
